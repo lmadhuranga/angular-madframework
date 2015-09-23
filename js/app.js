@@ -18,6 +18,11 @@ myApp.config(['$routeProvider',
                                             templateUrl: 'views/test.html',
                                             controller: 'TestController'
                                             
+                                        }).when('/phones/', 
+                                        { 
+                                            templateUrl: 'views/phoneslist.html',
+                                            controller: 'PhoneListController'
+                                            
                                         }).when('/sample', 
                                         { 
                                             templateUrl: 'views/sample.html',

@@ -18,3 +18,12 @@ SampleServices.factory('Users', function ($resource) {
     })
 })
  
+
+ 
+var PhoneService = angular.module('Phone.services', ['ngResource']);
+// no parameter and request
+PhoneService.factory('Phones', function ($resource) { 
+    return $resource('http://angular.github.io/angular-phonecat/step-5/app/phones/phones.json', {}, {
+        get: { method: 'GET', isArray:true} 
+    })
+})
