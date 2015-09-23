@@ -1,7 +1,8 @@
 <h1>Phones list page</h1>
 <table>
 
-	<tr ng-repeat="phone in phones" title="{{phone.snippet}}">
-		<td>{{phone.name}}</td>		
-	</tr>
+	<div ng-repeat="phone in phones" title="{{phone.snippet}}" >
+		<div>{{phone.name}}</div>		
+		<div><img src="http://angular.github.io/angular-phonecat/step-12/app/{{phone.imageUrl}}" width="50"></div>		
+	</div>
 </table>
