@@ -1,2 +1,11 @@
 # angular-madframework
-download and up and run project for angular
+
+This is a sample application for the angular js 
+
+* This has simple front end
+* Managing route
+* Manageing page templating
+* MVC formated
+
+
+
