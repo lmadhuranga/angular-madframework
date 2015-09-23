@@ -1,5 +1,4 @@
-'use strict';
-
+'use strict'; 
 
 // Declare app level module which depends on filters, and services
 var myApp = angular.module('myApp',['Sample.controllers','ngRoute']);
@@ -22,6 +21,11 @@ myApp.config(['$routeProvider',
                                         { 
                                             templateUrl: 'views/phoneslist.html',
                                             controller: 'PhoneListController'
+                                            
+                                        }).when('/phoneview/:id', 
+                                        { 
+                                            templateUrl: 'views/phoneview.html',
+                                            controller: 'PhoneViewController'
                                             
                                         }).when('/sample', 
                                         { 

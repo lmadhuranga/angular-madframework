@@ -10,10 +10,17 @@ SampleModule.controller('SampleControllerss', function($scope,Users)
 {
     console.log('TestController Loaded');
 
-}) .controller('PhoneListController', function($scope, Phones)
+}).controller('PhoneViewController', function($scope,$routeParams, Phones)
+{
+    console.log('PhoneViewController Loaded');
+	console.log('member id',$routeParams.id);
+	// $scope.phones = (Phones.query());
+
+}).controller('PhoneListController', function($scope, Phones)
 {
     console.log('PhoneListController Loaded');
 	$scope.phones = (Phones.query());
+	
 
 }) 
 .controller('HomeController', function($scope)
