@@ -10,8 +10,8 @@ myApp.config(['$routeProvider',
                     {
                         $routeProvider.when('/', 
                                         {
-                                            templateUrl: 'views/test.html',
-                                            controller: 'TestController' 
+                                            templateUrl: 'views/home.html',
+                                            controller: 'HomeController' 
                                         })
                                         .when('/test/', 
                                         { 
@@ -24,7 +24,7 @@ myApp.config(['$routeProvider',
                                             controller: 'SampleControllerss'
                                             
                                         })
-                                        .otherwise({redirectTo: '/admin/login'});
+                                        .otherwise({redirectTo: '/'});
                     }
                 ]);
 				
