@@ -1,8 +1,0 @@
-<h1>Phones list page</h1>
-<table>
-	<input type="text" ng-model="name">
-	<div ng-repeat="phone in phones | filter:name" title="{{phone.snippet}}" >
-		<div><a href="#/phoneview/{{phone.id}}">{{phone.name}}</a></div>		
-		<div>	<img ng-src="http://angular.github.io/angular-phonecat/step-12/app/{{phone.imageUrl}}" width="50"></div>		
-	</div>
-</table>
