@@ -12,13 +12,11 @@ angular.module('myApp', ['ngResource','ui.router','Home.controllers','User.contr
     }) 
     // setup an abstract state for the tabs directive
     .state('header.login', {
-        parent:'header',
         url: '/login', 
         templateUrl: 'templates/login.html',
         controller:'DeskTopLoginController'
     })
     .state('header.home', { 
-        parent:'header',
         url: '/home', 
         templateUrl: 'templates/home.html' 
     })
@@ -27,7 +25,6 @@ angular.module('myApp', ['ngResource','ui.router','Home.controllers','User.contr
         templateUrl: 'templates/header2.html' 
     })
     .state('header2.home', { 
-        parent:'header2',
         url: '/home2', 
         templateUrl: 'templates/home.html' 
     })
