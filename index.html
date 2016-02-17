@@ -8,10 +8,13 @@
 <body ng-app="myApp">
   <h1 style="color:blue;">Simple Angular StateProvide Example</h1>
 	<ul style="list-style-type: none;">
-		<li><a ui-sref="login">Login</a></li>
-		<li><a ui-sref="home">Home</a></li>
+		<li><a ui-sref="header.home">Home</a></li>
+		<li><a ui-sref="header.login">Login</a></li>
+		
+		<li><a ui-sref="header2.home">Home</a></li>
+		<li><a ui-sref="header2.login">Login</a></li>
 	</ul> 
-	<div style="padding-left: 40%;" ui-view></div>
+	<div  ui-view></div>
 	<script type="text/javascript" src="./app/app.js"></script>
 	<script type="text/javascript" src="./app/controllers.js"></script>
 	<script type="text/javascript" src="./app/services.js"></script>
