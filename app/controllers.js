@@ -5,7 +5,7 @@ angular.module('Home.controllers',[])
 }) 
 
 
-var UserModule =  angular.module('User.controllers',['DesktopUsers.service']);
+var UserModule =  angular.module('User.controllers',['Util.service']);
 //  user login details
 UserModule.controller('DeskTopLoginController', function($scope,DesktopUser)
 { 
